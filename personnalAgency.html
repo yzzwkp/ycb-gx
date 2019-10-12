@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>申请代理</title>
+    <link rel="stylesheet" href="css/condition.css">
+</head>
+<body>
+    <div class="warper">
+        <div class="head"></div>
+        <div class="condition">
+            <h3>申请代理</h3>
+            <p>Application agent</p>
+        <div class="apply">
+            <div class="header">
+                <h3>我是个人</h3>
+                <img src="image/delete.png" alt="">
+            </div>
+            <div class="body">
+                <div class="input">
+                    <span>姓名</span>
+                    <input type="text" placeholder="请输入真实姓名">
+                </div>
+                <div class="input">
+                        <span>性别</span>
+                        <div class="button">
+                            <button class="sex">男</button>
+                            <button class="sex">女</button>
+                        </div>
+                    </div>
+                    <div class="input">
+                            <span>年龄</span>
+                            <div class="button">
+                                    <button class="age">18岁以下</button>
+                                    <button class="age">18—30岁</button>
+                                    <button class="age">30—45岁</button>
+                                    <button class="age">45岁以上</button>
+                            </div>
+                        </div>
+                        <div class="input address">
+                            <span>公司地址</span>
+                            <div class="city-picker-selector" id="city-picker-search">
+                                <div class="selector-item storey province">
+                                    <a href="javascript:;" class="selector-name reveal df-color ">请选择省份</a>
+                                    <input type="hidden" name="userProvinceId" class="input-price val-error" value="" data-required="userProvinceId">
+                                    <div class="selector-list listing hide">
+                                        <div class="selector-search">
+                                            <input type="text" class="input-search" value="" placeholder="拼音、中文搜索">
+                                        </div>
+                                        <ul>
+                                            <li>北京市</li>
+                                            <li>天津市</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="selector-item storey city">
+                                    <a href="javascript:;" class="selector-name reveal df-color forbid">请选择城市</a>
+                                    <input type="hidden" name="userCityId" class="input-price val-error" value="" data-required="userCityId">
+                                    <div class="selector-list listing hide">
+                                        <div class="selector-search">
+                                            <input type="text" class="input-search" value="" placeholder="拼音、中文搜索">
+                                        </div>
+                                        <ul></ul>
+                                    </div>
+                                </div>
+                                <div class="selector-item storey district">
+                                    <a href="javascript:;" class="selector-name reveal df-color forbid">请选择区县</a>
+                                    <input type="hidden" name="userDistrictId" class="input-price val-error" value="" data-required="userDistrictId">
+                                    <div class="selector-list listing hide">
+                                        <div class="selector-search">
+                                            <input type="text" class="input-search" value="" placeholder="拼音、中文搜索">
+                                        </div>
+                                        <ul></ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="text" placeholder="请输入详细地址">
+                        </div>
+                    <div class="input">
+                            <span>电话</span>
+                               <input type="text" placeholder="请输入联系电话">
+                        </div>
+                        <div class="input">
+                                <span>邮箱</span>
+                                <input type="text" placeholder="请输入联系邮箱">
+                            </div>
+                     <div class="input">
+                        <span>微信</span>
+                        <input type="text" placeholder="请输入微信账号">
+                    </div>
+            </div>
+            <button class="commit"><a href="submit.html">提交</a></button>
+
+        </div>
+        </div>
+        <div class="background">
+               <img src="image/background.png" alt="">
+            </div>
+    </div>
+    <script src="js/jquery-2.0.0.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/citydata.js"></script>
+    <script src="js/cityPicker-1.0.0.js"></script>
+</body>
+</html>

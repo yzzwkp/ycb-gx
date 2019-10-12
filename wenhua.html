@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/index.css">
+    <title>企业文化</title>
+</head>
+<body>
+     <!-- 企业文化 -->
+     <div class="head"></div>
+     <div class="wenhua">
+            <div class="wenhua-head">
+               <h1>企业文化</h1>
+               <p>Corporate Culture</p>
+            </div>
+            <img src="./image/wenhua2.png" alt="" class="wenhua-left">
+            <img src="./image/wenhua1.png" alt="" class="wenhua-right">
+            <div class="tubiao">
+                <div class="tb-1">
+                       <img src="./image/tb1.png" alt="">
+                       <p class="tb-p1">让互联网创业普惠化</p>
+                       <div class="tb-wenzi">
+                        <img class="wenhuaimg" src="./image/yd.png" alt="">
+                         <p class="tb-p2">宗旨</p>
+                        </div>
+                        <div class="bor"></div>
+                </div>
+                <div class="tb-2">
+                       <img src="./image/tb1.png" alt="">
+                       <p class="tb-p1">科技求同，创新求异</p>
+                       <div class="tb-wenzi">
+                        <img class="wenhuaimg" src="./image/yd.png" alt="">
+                         <p class="tb-p2">理念</p>
+                       </div>
+                       <div class="bor2"></div>
+                </div>
+                <div class="tb-3">
+                       <img src="./image/tb3.png" alt="">
+                       <p class="tb-p1-3">帮助全球一千万人<br>实现<span style="color: #fff">创业梦想</span></p>
+                       <div class="tb-wenzi">
+                        <img class="wenhuaimg" src="./image/yd.png" alt="">
+                         <p class="tb-p2" style="color: #fff">目标</p>
+                       </div>
+                       <div class="bor3"></div>
+                </div>
+                <div class="tb-4">
+                       <img src="./image/tb4.png" alt="">
+                       <p class="tb-p1-4">让全球汽车爱上中国服务</p>
+                       <div class="tb-wenzi-4">
+                        <img class="wenhuaimg" src="./image/yd.png" alt="">
+                         <p class="tb-p2" style="color: #fff">愿景</p>
+                       </div>
+                       <div class="bor4"></div>
+                </div>
+                <div class="tb-5">
+                       <img src="./image/tb4.png" alt="">
+                       <p class="tb-p1-5">创新车服 拼创未来<br>团结一心 高效成果</p>
+                       <div class="tb-wenzi-5">
+                        <img class="wenhuaimg" src="./image/yd.png" alt="">
+                         <p class="tb-p2" style="color: #fff">价值观</p>
+                       </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery-2.0.0.min.js"></script>
+        <script src="js/index.js"></script>
+        <script>
+           $(function(){
+                  $('.wenhuaimg').mouseenter(function(){
+                     let img1 = '';  
+                    img1 += $(this).attr('src');
+                    re=new RegExp("yd","g");
+                    var img2=img1.replace(re,"yd1");
+                    console.log(img2)    
+                  $(this).attr("src",img2);   
+                  $(this).mouseout(function(){  //移除效果
+                    $(this).attr("src",img1); 
+                  })  
+                         console.log(1)
+                  })
+           })
+        </script>
+</body>
+
+</html>

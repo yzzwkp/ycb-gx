@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/index.css">
+    <title>战略画像</title>
+</head>
+<body>
+    <div class="head"></div>
+     <!-- 战略画像 -->
+     <div class="hx">
+            <img src="./image/dsj3.png" alt="" class="hx-img1">
+               <div class="hx-head">
+                   <h1>战略画像</h1>
+                   <p>Strategic portrait </p>
+               </div>
+               <div class="hx-d">
+                <img src="./image/ditu.gif" alt="" class="hx-img2">
+                   <div id="hx-d1">
+                   <p class="hx-p1">成为一个车联网+现象级生态系统</p>
+                   <p class="hx-p2"><span id="numBox">123</span>+<br><span>城市</span></p>
+                   <p class="hx-p3"><span id="numBox1">123</span>+<br><span>商家</span></p>
+                   <p class="hx-p4"><span id="numBox2">123</span>+<br><span>注册用户</span></p>
+                   </div>
+               </div>
+               <img src="./image/zl.png" alt="" class="hx-img3">
+               <ul class="zl-ul">
+                   <li>全球一站式互联网移动智能汽车服务平台</li>
+                   <li>全球数据社交开创者</li>
+                   <li>全球最大汽车后市场综合运营平台</li>
+                   <li>专注于全球汽车垂直生态电商的平台</li>
+                   <li>车联网创业普惠化推行者</li>
+                   <li>全球"车联网+"推行者</li>
+                   <li>搭建全国首个“车联网+”金融平台</li>
+               </ul>
+        </div>
+        <script src="js/jquery-2.0.0.min.js"></script>
+        <script src="js/index.js"></script>
+        <script>
+        
+        function numRunFun(num, maxNum){
+        var numBox = document.getElementById("numBox");
+        var num = num;
+        var maxNum = maxNum;
+        var timer = setInterval(function(){
+            num+=5; // 调节速度
+            if(num >= maxNum){
+                numBox.innerHTML = maxNum;
+                clearInterval(timer);
+            } else {
+                numBox.innerHTML = num;
+            }
+        },50); // 可以调节速度
+    }
+    function numRunFun1(num, maxNum){
+        var numBox = document.getElementById("numBox1");
+        var num = num;
+        var maxNum = maxNum;
+        var timer = setInterval(function(){
+            num+=2532; // 调节速度
+            if(num >= maxNum){
+                numBox.innerHTML = maxNum;
+                clearInterval(timer);
+            } else {
+                numBox.innerHTML = num;
+            }
+        },50); // 可以调节速度
+    }
+    function numRunFun2(num, maxNum){
+        var numBox = document.getElementById("numBox2");
+        var num = num;
+        var maxNum = maxNum;
+        var timer = setInterval(function(){
+            num+=305025; // 调节速度
+            if(num >= maxNum){
+                numBox.innerHTML = maxNum;
+                clearInterval(timer);
+            } else {
+                numBox.innerHTML = num;
+            }
+        },50); // 可以调节速度
+    }
+    // 运行
+    numRunFun(0,228);
+    numRunFun1(0,110120);
+    numRunFun2(0,13229330);
+
+        </script>
+</body>
+</html>
